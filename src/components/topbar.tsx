@@ -1,4 +1,5 @@
 import { ArrowDownSvg, NotificationSvg, SearchSvg, UsSvg } from "../svg"
+import userProfile from "../assets/user-profile.webp"
 
 export const Topbar = () => {
 
@@ -11,9 +12,9 @@ export const Topbar = () => {
                 <div className="min-w-100 flex items-center gap-2 text-[#5D5FEF] bg-[#F9FAFB] rounded-2xl px-5.5 py-3">
                     <SearchSvg/>
                     <input
+                    className="w-full text-[#737791] bg-transparent focus:outline-none"
                     type="text"
                     placeholder="Search here..."
-                    className="w-full text-[#737791] bg-transparent focus:outline-none"
                     />
                 </div>
                 <div className="flex items-center gap-3 font-medium px-3">
@@ -30,7 +31,7 @@ export const Topbar = () => {
                     </button>
                     <div className="flex items-center gap-4">
                         <img
-                        src="/user-profile.webp"
+                        src={userProfile}
                         alt="User Avatar"
                         className="w-13 h-13 rounded-2xl object-cover"
                         />
